@@ -16,4 +16,4 @@ db:
     MYSQL_USER: infamouslight
     MYSQL_PASSWORD: vegeta
   ports:
-     - "3306:3306"
+     - "3307:3306"
