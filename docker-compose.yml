@@ -1,0 +1,19 @@
+web:
+  build: .
+  ports:
+   - "80:80"
+   - "8000:8000"
+   - "9000:9000"
+  volumes:
+   - .:/var/www/
+  links:
+    - db
+db:
+  image: mysql
+  environment:
+    MYSQL_ROOT_PASSWORD: vegeta
+    MYSQL_DATABASE: db_demo
+    MYSQL_USER: infamouslight
+    MYSQL_PASSWORD: vegeta
+  ports:
+     - "3306:3306"
