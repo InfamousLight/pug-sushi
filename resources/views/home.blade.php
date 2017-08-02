@@ -14,8 +14,8 @@
                 <script>
                     tinymce.init({
                         selector: '#editor',
-                        plugins: 'image code emoticons',
-                        toolbar: 'undo redo | link image | code | emoticons',
+                        plugins: 'image code emoticons spellchecker',
+                        toolbar: 'undo redo | link image | code | emoticons | spellchecker',
                         // enable title field in the Image dialog
                         image_title: true,
                         // enable automatic uploads of images represented by blob or data URIs
