@@ -12,7 +12,7 @@
                     </div>
                 </div>
                 @endforeach
-                    test {{ $posts->links() }}
+                    {{ $posts->links() }}
             </div>
         </div>
     </div>
